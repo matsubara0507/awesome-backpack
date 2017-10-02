@@ -10,5 +10,6 @@ https://ghc.haskell.org/trac/ghc/wiki/Backpack
 
 ## Links
 
-- [POPL Paper : *Backpack: Retrofitting Haskell with Interfaces*](http://plv.mpi-sws.org/backpack/backpack-popl.pdf)
+- [POPL 2014 Paper : *Backpack: Retrofitting Haskell with Interfaces*](http://plv.mpi-sws.org/backpack/)
+    - [POPL 2014 Talk Slide](http://plv.mpi-sws.org/backpack/backpack-popl.pdf)
 
