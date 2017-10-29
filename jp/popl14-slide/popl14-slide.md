@@ -374,7 +374,7 @@ Package を2回たどる
 
 ## Type System: Linking
 
-
+![](img/semantics.jpg)
 
 ---
 
