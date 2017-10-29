@@ -349,25 +349,52 @@ Module Identities は shared reuse and recursive linking を可能にする！�
 
 ## Module Identity 
 
+(論理的な Identity ではなく，物理的な Identity ??)
+
+```
 Module Identity
   | -> Type System
   | -> Elaboration
+```
 
 ---
 
 ## Type System
 
+Package を2回たどる
+
+1. Shaping
+  - Module と Code の構造を決定する
+  - Module Identities を統合する
+2. Typing
+  - Haskell の型検査をする
+  - Shapes に Haskell の型付け情報を付け足す
+
 ---
 
 ## Type System: Linking
+
+
 
 ---
 
 ## Elaboration
 
+- Identity ごとに1つのモジュールファイル
+- コードの複製（C ++テンプレートを真似て）
+- コードの大部分を保存する
+- Identity へのインポートを書き直す
+
 ---
 
-## What else is in the paper?
+## What else is in the ~paper~ 53-page appendix ?
+
+53ページの付録(論文？何の話？)には他に何が書いてあるの？
+
+- Thinning と Renaming
+- Haskell Modules の形式化
+- Elaboration の健全性と証明
+- コア言語のメタ定理と公理
 
 ---
 
@@ -381,16 +408,24 @@ Module Identity
 
 ## Future Work
 
+- 型クラス
+- Cabal パッケージマネージャとの統合
+
 ---
 
 ## Contributions
 
+- Strong Modularity で Haskell を改良する
+  - パッケージレベルでの設計
+  - 簡易的な MixIn デザインを採用
+  - Haskell の Weak Modules の詳細(elaboration)として定義した
+  - 別々に型検査するが別々にコンパイルはしない
+- これはジェネリックな設計なので他の Weak Module を持つ言語でも機能するだろう
 
+---
 
+## Thanks!
 
+Weak Module を持つ既存の言語をすべてターゲットにするのは決して実用的とは言えない...しかしとても面白い事だ！
 
-
-
-
-
-
+(Targeting an existing, weak module language is not just practical but interesting!)
